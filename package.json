@@ -1,4 +1,5 @@
 {
+  "repository": "https://github.com/letieu/react-auto-height-image.git",
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
@@ -21,5 +22,8 @@
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }
