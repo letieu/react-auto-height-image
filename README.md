@@ -13,11 +13,29 @@ npm install react-auto-height-image
 ```
 
 ## Use
+
+Use with your loading component
 ```jsx
 <AutoHeightImage
-  src={image}
-  width="100%"
+  src="https://i.picsum.photos/id/172/200/300.jpg"
   loadingComponent={<LoadingComponent />}
 />
+```
+
+Use with fixed height
+```jsx
+<AutoHeightImage
+  src="https://i.picsum.photos/id/172/200/300.jpg"
+  defaultHeight="200px"
+/>
+```
+
+## Props
+```js
+
+interface AutoHeightImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+  loadingComponent?: React.ReactNode,
+  defaultHeight?: string,
+}
 
 ```
