@@ -25,5 +25,10 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "keywords": [
+    "react",
+    "image",
+    "loading",
+  ]
 }
